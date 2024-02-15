@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="WatchTowerv1">
+
+<test name="WatchTower test">
+<parameter name="browser" value="chrome" />
+<classes>
+<class name="com.watchtower.testCases.TC_Logintest_001" />
+</classes>
+</test>
+
+
+
+</suite>
