@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <suite name="WatchTowerv1">
+	
+	<listeners>
+		<listener class-name="com.watchtower.extendReport.TestListener"></listener>
+	</listeners>
 
 <test name="WatchTower test">
 <parameter name="browser" value="chrome" />

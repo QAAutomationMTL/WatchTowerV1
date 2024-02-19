@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [WatchTowerv1]">
+  <listeners>
+    <listener class-name="com.watchtower.extendReport.TestListener"/>
+  </listeners>
   <test thread-count="5" name="WatchTower test(failed)">
-    <parameter name="browser" value="ie"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.watchtower.testCases.TC_Logintest_001">
         <methods>

@@ -5,14 +5,16 @@ import org.testng.annotations.Test;
 
 import com.watchtower.pageObjects.LoginPage;
 
+
+
 public class TC_Logintest_001 extends BaseClass
 {
 	@Test
 	public void loginTest()
 	{
 	// driver.get(baseURL);
-	 String title=driver.getTitle();
-	 System.out.println(title);
+	// String cururl=driver.getCurrentUrl();
+	// System.out.println(title);
 	 
 	 LoginPage lp=new LoginPage(driver);
 	 
@@ -20,13 +22,16 @@ public class TC_Logintest_001 extends BaseClass
 	 lp.setPassword(password);
 	 lp.clickSubmit();
 	 
-	 if(driver.getTitle().equals(title))
+	 String cururl=driver.getCurrentUrl();
+	 System.out.println(cururl);
+	 
+	 if(driver.getCurrentUrl().equals(cururl))
 	 {
-		 Assert.assertTrue(true);
+		 Assert.assertTrue(false);
 	 }
 	 else
 	 {
-		 Assert.assertTrue(false);
+		 Assert.assertTrue(true);
 	 }
 	}
 }
