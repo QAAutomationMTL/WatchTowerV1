@@ -9,11 +9,16 @@
     <classes>
       <class name="com.watchtower.testCases.TC_Logintest_001">
         <methods>
-          <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="loginTest"/>
         </methods>
       </class> <!-- com.watchtower.testCases.TC_Logintest_001 -->
+      <class name="com.watchtower.testCases.TC_ClientManager_002">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="ClientManagerTest"/>
+        </methods>
+      </class> <!-- com.watchtower.testCases.TC_ClientManager_002 -->
     </classes>
   </test> <!-- WatchTower test(failed) -->
 </suite> <!-- Failed suite [WatchTowerv1] -->

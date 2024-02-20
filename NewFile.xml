@@ -10,8 +10,10 @@
 <parameter name="browser" value="chrome" />
 <classes>
 <class name="com.watchtower.testCases.TC_Logintest_001" />
+<class name="com.watchtower.testCases.TC_ClientManager_002" />
 </classes>
 </test>
+
 
 
 

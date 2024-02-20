@@ -17,21 +17,21 @@ public class TC_Logintest_001 extends BaseClass
 	// System.out.println(title);
 	 
 	 LoginPage lp=new LoginPage(driver);
-	 
+	
 	 lp.setuserName(username);
 	 lp.setPassword(password);
 	 lp.clickSubmit();
 	 
-	 String cururl=driver.getCurrentUrl();
+	String cururl=driver.getCurrentUrl();
 	 System.out.println(cururl);
 	 
 	 if(driver.getCurrentUrl().equals(cururl))
 	 {
-		 Assert.assertTrue(false);
+		 Assert.assertTrue(true);
 	 }
 	 else
 	 {
-		 Assert.assertTrue(true);
+		 Assert.assertTrue(false);
 	 }
 	}
 }

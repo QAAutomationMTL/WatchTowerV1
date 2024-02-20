@@ -2,15 +2,15 @@ package com.watchtower.testCases;
 
 import java.io.IOException;
 
+import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.ITestResult;
 
-import org.testng.annotations.AfterMethod;
-
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 import com.watchtower.utilities.ReadConfig;
@@ -26,7 +26,8 @@ public class BaseClass
 	ScreenShot ssh;
 
 	@Parameters("browser")
-	@BeforeMethod
+	
+	@BeforeTest
 	public void setUp(String br)
 	{
 		if(br.equals("chrome"))
@@ -47,9 +48,10 @@ public class BaseClass
 		}
 		driver.manage().window().maximize();
 				driver.get(baseURL);
+				
 	}
 	
-	@AfterMethod
+	@AfterTest
 	public void tearDown(ITestResult itr) throws IOException
 	{
 		if(itr.getStatus()==ITestResult.FAILURE)

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-19T16:48:12 IST" name="WatchTowerv1" finished-at="2024-02-19T16:48:25 IST" duration-ms="12425">
+  <suite started-at="2024-02-20T16:19:26 IST" name="WatchTowerv1" finished-at="2024-02-20T16:19:44 IST" duration-ms="17472">
     <groups>
     </groups>
-    <test started-at="2024-02-19T16:48:12 IST" name="WatchTower test" finished-at="2024-02-19T16:48:25 IST" duration-ms="12425">
+    <test started-at="2024-02-20T16:19:26 IST" name="WatchTower test" finished-at="2024-02-20T16:19:44 IST" duration-ms="17472">
       <class name="com.watchtower.testCases.TC_Logintest_001">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.watchtower.testCases.TC_Logintest_001@460ebd80]" started-at="2024-02-19T16:48:12 IST" name="setUp" finished-at="2024-02-19T16:48:24 IST" duration-ms="12046" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.watchtower.testCases.TC_Logintest_001@31bcf236]" started-at="2024-02-20T16:19:26 IST" name="setUp" finished-at="2024-02-20T16:19:37 IST" duration-ms="10286" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,29 +18,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:0, instance:com.watchtower.testCases.TC_Logintest_001@460ebd80]" started-at="2024-02-19T16:48:24 IST" name="loginTest" finished-at="2024-02-19T16:48:24 IST" duration-ms="178" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="loginTest()[pri:0, instance:com.watchtower.testCases.TC_Logintest_001@31bcf236]" started-at="2024-02-20T16:19:37 IST" name="loginTest" finished-at="2024-02-20T16:19:37 IST" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.watchtower.testCases.TC_Logintest_001@31bcf236]" started-at="2024-02-20T16:19:44 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1708426184425" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @AfterTest annotated tearDown.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError
-at org.junit.Assert.fail(Assert.java:87)
-at org.junit.Assert.assertTrue(Assert.java:42)
-at org.junit.Assert.assertTrue(Assert.java:53)
-at com.watchtower.testCases.TC_Logintest_001.loginTest(TC_Logintest_001.java:30)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @AfterTest annotated tearDown.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:445)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
+at org.testng.internal.Parameters.createParameters(Parameters.java:702)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:661)
+at org.testng.TestRunner.afterRun(TestRunner.java:904)
+at org.testng.TestRunner.run(TestRunner.java:622)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
@@ -56,22 +56,17 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.watchtower.testCases.TC_Logintest_001@460ebd80]" started-at="2024-02-19T16:48:24 IST" name="tearDown" finished-at="2024-02-19T16:48:25 IST" duration-ms="166" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginTest status=FAILURE method=TC_Logintest_001.loginTest()[pri:0, instance:com.watchtower.testCases.TC_Logintest_001@460ebd80] output={null}]]]>
-              </value>
-            </param>
-          </params>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.watchtower.testCases.TC_Logintest_001 -->
+      <class name="com.watchtower.testCases.TC_ClientManager_002">
+        <test-method signature="ClientManagerTest()[pri:0, instance:com.watchtower.testCases.TC_ClientManager_002@38831718]" started-at="2024-02-20T16:19:37 IST" name="ClientManagerTest" finished-at="2024-02-20T16:19:44 IST" duration-ms="6928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClientManagerTest -->
+      </class> <!-- com.watchtower.testCases.TC_ClientManager_002 -->
     </test> <!-- WatchTower test -->
   </suite> <!-- WatchTowerv1 -->
 </testng-results>
