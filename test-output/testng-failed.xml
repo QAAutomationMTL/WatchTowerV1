@@ -7,15 +7,10 @@
   <test thread-count="5" name="WatchTower test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.watchtower.testCases.TC_Settings_006">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="ClickCountries"/>
-        </methods>
-      </class> <!-- com.watchtower.testCases.TC_Settings_006 -->
       <class name="com.watchtower.testCases.TC_Logintest_001">
         <methods>
+          <include name="setUp"/>
+          <include name="logout"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.watchtower.testCases.TC_Logintest_001 -->

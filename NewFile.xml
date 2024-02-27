@@ -14,7 +14,7 @@
 <!--<class name="com.watchtower.testCases.TC_MilestoneManager_003" />-->
 <!--<class name="com.watchtower.testCases.TC_AMCManager_004" />-->
 <!-- <class name="com.watchtower.testCases.TC_UserManager_005" />-->
-<class name="com.watchtower.testCases.TC_Settings_006" />
+<!-- <class name="com.watchtower.testCases.TC_Settings_006" />-->
 </classes>
 </test>
 

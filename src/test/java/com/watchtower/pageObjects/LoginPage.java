@@ -1,5 +1,6 @@
 package com.watchtower.pageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -32,6 +33,13 @@ public class LoginPage
 	public void clickSubmit()
 	{
 		submit.click();
-		//password.sendKeys(pwd);
+		
+	}
+	public void logout() throws InterruptedException
+	{
+		Thread.sleep(1000);
+		ldriver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[5]/div[2]/img[1]")).click();
+		Thread.sleep(2000);
+		ldriver.findElement(By.xpath("(//*[text()='Sign Out' ])[1]")).click();
 	}
 }

@@ -16,7 +16,7 @@ public class TC_Settings_006 extends BaseClass
 	  sm.clickSettings();
 	  
   }
- /* @Test(priority=2)
+ @Test(priority=2)
   public void AddNewCurrency() throws InterruptedException
   {		
 	  Thread.sleep(2000);
@@ -28,17 +28,58 @@ public class TC_Settings_006 extends BaseClass
 	  sm.clickAddCurrencyDetails();
   }
   @Test(priority=4)
-  public void SettingsSearch() throws InterruptedException
+  public void SettingsSearchCurrency() throws InterruptedException
   {
 	  
-	  sm.SearchFunction();
-  }*/
+	  sm.SearchFunctionCurrency();
+  }
   
-  @Test(priority=1)
+ @Test(priority=5)
    public void ClickCountries() throws InterruptedException
     {		
-  	  Thread.sleep(2000);
+  	  //Thread.sleep(2000);
   	  sm.clickCountries();
     }
-  
+  @Test(priority=6)
+  public void ClickAddNewCountry() throws InterruptedException
+   {		
+ 	  //Thread.sleep(2000);
+ 	  sm.clickAddNewCountry();
+   }
+  @Test(priority=7)
+  public void AddCountryDetails() throws InterruptedException
+  {
+	  sm.clickAddCountryDetails();
+  }
+  @Test(priority=8)
+  public void SettingsSearchCountry() throws InterruptedException
+  {
+	  
+	  sm.SearchFunctionCountry();
+  }
+  @Test(priority=9)
+  public void ClickStates() throws InterruptedException
+   {		
+ 	  //Thread.sleep(2000);
+ 	  sm.clickStates();
+ 	Thread.sleep(2000);
+   }
+ @Test(priority=10)
+ public void ClickAddNewState() throws InterruptedException
+  {		
+	  
+	  sm.clickAddNewState();
+  }
+ @Test(priority=12)
+ public void AddStateDetails() throws InterruptedException
+ {
+	  sm.clickAddStateDetails();
+ }
+ @Test(priority=13)
+ public void SettingsSearchState() throws InterruptedException
+ {
+	  
+	  sm.SearchFunctionState();
+ }
 }
+
