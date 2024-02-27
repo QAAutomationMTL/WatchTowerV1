@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-WatchTowerv1" class="navigator-link">
-              <span class="suite-name border-passed">WatchTowerv1</span>
+              <span class="suite-name border-failed">WatchTowerv1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-WatchTowerv1" class="hide-methods failed suite-WatchTowerv1"> (hide)</a> <!-- hide-methods failed suite-WatchTowerv1 -->
+                      <a href="#" panel-name="suite-WatchTowerv1" class="show-methods failed suite-WatchTowerv1"> (show)</a> <!-- show-methods failed suite-WatchTowerv1 -->
+                    </span>
+                    <div class="method-list-content failed suite-WatchTowerv1">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-WatchTowerv1" title="com.watchtower.testCases.TC_Settings_006" class="method navigator-link" hash-for-method="ClickCountries">ClickCountries</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-WatchTowerv1 -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +117,7 @@
                     <div class="method-list-content passed suite-WatchTowerv1">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-WatchTowerv1" title="com.watchtower.testCases.TC_ClientManager_002" class="method navigator-link" hash-for-method="ClientManagerTest">ClientManagerTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-WatchTowerv1" title="com.watchtower.testCases.TC_Settings_006" class="method navigator-link" hash-for-method="Settings">Settings</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -123,6 +137,41 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-WatchTowerv1" class="panel WatchTowerv1">
+          <div class="suite-WatchTowerv1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.watchtower.testCases.TC_Settings_006</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ClickCountries">
+                  </a> <!-- ClickCountries -->
+                  <span class="method-name">ClickCountries</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.watchtower.testCases.TC_Settings_006.ClickCountries(TC_Settings_006.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-WatchTowerv1-class-failed -->
+          <div class="suite-WatchTowerv1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.watchtower.testCases.TC_Settings_006</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Settings">
+                  </a> <!-- Settings -->
+                  <span class="method-name">Settings</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-WatchTowerv1-class-passed -->
           <div class="suite-WatchTowerv1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -134,21 +183,6 @@
                   <a name="loginTest">
                   </a> <!-- loginTest -->
                   <span class="method-name">loginTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-WatchTowerv1-class-passed -->
-          <div class="suite-WatchTowerv1-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.watchtower.testCases.TC_ClientManager_002</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="ClientManagerTest">
-                  </a> <!-- ClientManagerTest -->
-                  <span class="method-name">ClientManagerTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -170,7 +204,7 @@
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.watchtower.testCases.TC_Logintest_001&quot;/&gt;
-      &lt;class name=&quot;com.watchtower.testCases.TC_ClientManager_002&quot;/&gt;
+      &lt;class name=&quot;com.watchtower.testCases.TC_Settings_006&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- WatchTower test --&gt;
 &lt;/suite&gt; &lt;!-- WatchTowerv1 --&gt;
@@ -210,20 +244,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'ClientManagerTest')
-data.setCell(0, 2, 'com.watchtower.testCases.TC_ClientManager_002')
-data.setCell(0, 3, 6928);
+data.setCell(0, 1, 'Settings')
+data.setCell(0, 2, 'com.watchtower.testCases.TC_Settings_006')
+data.setCell(0, 3, 2113);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginTest')
-data.setCell(1, 2, 'com.watchtower.testCases.TC_Logintest_001')
-data.setCell(1, 3, 213);
+data.setCell(1, 1, 'ClickCountries')
+data.setCell(1, 2, 'com.watchtower.testCases.TC_Settings_006')
+data.setCell(1, 3, 2016);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginTest')
+data.setCell(2, 2, 'com.watchtower.testCases.TC_Logintest_001')
+data.setCell(2, 3, 390);
 window.suiteTableData['WatchTowerv1']= { tableData: data, tableDiv: 'times-div-WatchTowerv1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-WatchTowerv1">
               </div> <!-- times-div-WatchTowerv1 -->
             </div> <!-- times-div -->
@@ -242,11 +280,11 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.watchtower.testCases.TC_ClientManager_002</span>
+              <span class="ignored-class-name">com.watchtower.testCases.TC_Settings_006</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
                 <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -265,14 +303,20 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">10310 ms</span>
+                <span class="method-start">4788 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.watchtower.testCases.TC_ClientManager_002</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.watchtower.testCases.TC_Settings_006</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">ClientManagerTest</span>
-                <span class="method-start">10530 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ClickCountries</span>
+                <span class="method-start">5188 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Settings</span>
+                <span class="method-start">7221 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

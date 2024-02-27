@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-20T16:19:26 IST" name="WatchTowerv1" finished-at="2024-02-20T16:19:44 IST" duration-ms="17472">
+  <suite started-at="2024-02-27T15:04:09 IST" name="WatchTowerv1" finished-at="2024-02-27T15:04:19 IST" duration-ms="9367">
     <groups>
     </groups>
-    <test started-at="2024-02-20T16:19:26 IST" name="WatchTower test" finished-at="2024-02-20T16:19:44 IST" duration-ms="17472">
+    <test started-at="2024-02-27T15:04:09 IST" name="WatchTower test" finished-at="2024-02-27T15:04:19 IST" duration-ms="9367">
       <class name="com.watchtower.testCases.TC_Logintest_001">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.watchtower.testCases.TC_Logintest_001@31bcf236]" started-at="2024-02-20T16:19:26 IST" name="setUp" finished-at="2024-02-20T16:19:37 IST" duration-ms="10286" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.watchtower.testCases.TC_Logintest_001@41488b16]" started-at="2024-02-27T15:04:09 IST" name="setUp" finished-at="2024-02-27T15:04:14 IST" duration-ms="4752" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:0, instance:com.watchtower.testCases.TC_Logintest_001@31bcf236]" started-at="2024-02-20T16:19:37 IST" name="loginTest" finished-at="2024-02-20T16:19:37 IST" duration-ms="213" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.watchtower.testCases.TC_Logintest_001@41488b16]" started-at="2024-02-27T15:04:14 IST" name="loginTest" finished-at="2024-02-27T15:04:15 IST" duration-ms="390" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.watchtower.testCases.TC_Logintest_001@31bcf236]" started-at="2024-02-20T16:19:44 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1708426184425" status="FAIL">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.watchtower.testCases.TC_Logintest_001@41488b16]" started-at="2024-02-27T15:04:19 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1709026459162" status="FAIL">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -61,12 +61,51 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.watchtower.testCases.TC_Logintest_001 -->
-      <class name="com.watchtower.testCases.TC_ClientManager_002">
-        <test-method signature="ClientManagerTest()[pri:0, instance:com.watchtower.testCases.TC_ClientManager_002@38831718]" started-at="2024-02-20T16:19:37 IST" name="ClientManagerTest" finished-at="2024-02-20T16:19:44 IST" duration-ms="6928" status="PASS">
+      <class name="com.watchtower.testCases.TC_Settings_006">
+        <test-method signature="ClickCountries()[pri:1, instance:com.watchtower.testCases.TC_Settings_006@2c78324b]" started-at="2024-02-27T15:04:15 IST" name="ClickCountries" finished-at="2024-02-27T15:04:17 IST" duration-ms="2016" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.watchtower.testCases.TC_Settings_006.ClickCountries(TC_Settings_006.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClientManagerTest -->
-      </class> <!-- com.watchtower.testCases.TC_ClientManager_002 -->
+        </test-method> <!-- ClickCountries -->
+        <test-method signature="Settings()[pri:1, instance:com.watchtower.testCases.TC_Settings_006@2c78324b]" started-at="2024-02-27T15:04:17 IST" name="Settings" finished-at="2024-02-27T15:04:19 IST" duration-ms="2113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Settings -->
+      </class> <!-- com.watchtower.testCases.TC_Settings_006 -->
     </test> <!-- WatchTower test -->
   </suite> <!-- WatchTowerv1 -->
 </testng-results>

@@ -10,7 +10,7 @@ import com.watchtower.pageObjects.LoginPage;
 public class TC_Logintest_001 extends BaseClass
 {
 	@Test
-	public void loginTest()
+	public void loginTest() throws InterruptedException
 	{
 	// driver.get(baseURL);
 	// String cururl=driver.getCurrentUrl();
@@ -21,6 +21,7 @@ public class TC_Logintest_001 extends BaseClass
 	 lp.setuserName(username);
 	 lp.setPassword(password);
 	 lp.clickSubmit();
+	
 	 
 	String cururl=driver.getCurrentUrl();
 	 System.out.println(cururl);
